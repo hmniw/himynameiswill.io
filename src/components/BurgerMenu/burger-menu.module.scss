@@ -1,0 +1,40 @@
+@import "src/scss/partials/vars";
+
+.burger__container {
+
+}
+
+.burger {
+  position: absolute;
+  top: 6.6px;
+  left: 6.6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  visibility: hidden;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    visibility: visible;
+  }
+
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background: #aaa;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+}
