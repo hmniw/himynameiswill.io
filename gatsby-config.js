@@ -38,7 +38,7 @@ module.exports = {
           options: {
               name: `himynameiswill.io`,
               short_name: `Will H`,
-              start_url: `/`,
+              start_url: `https://himynameiswill.io`,
               background_color: `#000`,
               theme_color: `#00FFFF`,
               display: `standalone`,
