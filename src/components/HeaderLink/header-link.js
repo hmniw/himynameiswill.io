@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import styles from "../LeftNav/left-nav.module.scss";
+import styles from "./header-link.module.scss";
 
-
-
-export module
+export default (props) => (
+    <Link className={styles.link} to={props.to} onClick={() => props.setOpen(!props.open)}>{props.text}</Link>
+);

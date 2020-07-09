@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .paragraph-container {
+    width: 750px;
+    text-align: justify;
+
+    @media screen and (max-width: 768px) {
+      width: 75%;
+    }
+  }
+
+  h1 {
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0;
+    padding: 10px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3em;
+    }
+  }
+
+  .mot {
+    text-decoration: none;
+    color: #F9B233;
+    transition: color .5s;
+
+    &:hover {
+      color: #aaa;
+    }
+  }
+
+  .thoughtworks {
+    text-decoration: none;
+    color: #ef5ba1;
+    transition: color .5s;
+
+    &:hover {
+     color: #aaa;
+    }
+  }
+
+  .twitter {
+    text-decoration: none;
+    color: #00acee;
+    transition: color .5s;
+
+    &:hover {
+      color: #aaa;
+    }
+  }
+
+  .fancy {
+    background: linear-gradient(to right, cyan,violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .paragraph {
+    color: #fafafa;
+    font-weight: normal;
+    line-height: 35px;
+    font-size: 130%;
+    padding-bottom: 20px;
+
+    &:first-child {
+      padding-top: 10px;
+    }
+  }
+}

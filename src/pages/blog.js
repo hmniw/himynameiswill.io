@@ -1,11 +1,10 @@
 import React from "react"
-import Layout from '../../components/Layout/layout'
-import styles from './blog.module.scss'
+import Layout from '../components/Layout/layout'
+import ArticleList from '../components/ArticleList/article-list'
 
 
 export default () => (
     <Layout>
-        <div className={styles.container}>
-        </div>
+        <ArticleList/>
     </Layout>
 )

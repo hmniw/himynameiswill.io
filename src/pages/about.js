@@ -1,15 +1,33 @@
 import React from "react"
-import { Link } from "gatsby"
-import Layout from '../../components/Layout/layout'
+import Layout from '../components/Layout/layout'
+import styles from './about.module.scss'
 
 export default () => (
     <Layout>
-        <h1>This is the about page</h1>
-        <div>
-            <Link to={"/"}>Home</Link> | <Link to={"/about"}>About Me</Link>
+        <div className={styles.container}>
+            <h1 className={styles.fancy}>Will Herring</h1>
+            <div className={styles.paragraphContainer}>
+                <div className={styles.paragraph}>Alright, so hi <span role={"img"} aria-label={"waving hand"}>👋</span></div>
+                <div className={styles.paragraph}>Currently I work for
+                    <a href={"https://www.thoughtworks.com/"} className={styles.thoughtworks}><b> Thought</b>Works </a>
+                    as a QA<span role={"img"} aria-label={"alien monster"}>👾</span>I’m at the
+                     beginning of my journey, and though I’ve learnt plenty so far, there’s plenty more
+                    that I’ve yet to learn <span role={"img"} aria-label={"man student"}>👨‍🎓</span>
+                </div>
+                <div className={styles.paragraph}>
+                    I built this site to help solidify a lot of the things I've been learning through
+                    <a href={"https://www.ministryoftesting.com/"} className={styles.mot}> Ministry of Testing</a>, and to try and share
+                    some of it back with the community <span role={"img"} aria-label={"man technologist"}>👨‍💻 </span>
+                    A lot of this will consist of opinionated stuff, ideas on the theory of testing,
+                    probably sometimes some personal stuff, and maybe some stuff on automation
+                    <span role={"img"} aria-label={"mechanical arm"}> 🦾</span>
+                </div>
+                <div className={styles.paragraph}>
+                    Social handles are on the homepage, and I'd love to hear feedback and differing
+                    opinions, so <a href={"https://twitter.com/WillTestsThings"} className={styles.twitter}> reach out</a>
+                    <span role={"img"} aria-label={"man raising one hand"}> 🙋‍♂</span> ️
+                </div>
+            </div>
         </div>
-        <p>
-            Lorem ipsum.
-        </p>
     </Layout>
 )

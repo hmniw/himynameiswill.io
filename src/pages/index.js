@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from '../../components/Layout/layout'
+import Layout from '../components/Layout/layout'
 import styles from './index.module.scss'
 import {faGithub, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

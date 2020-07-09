@@ -1,0 +1,34 @@
+.link {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px;
+  color: rgba(256,256,256,1);
+  background: linear-gradient(to right, cyan, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transition: color 0.5s, font-size 0.5s;
+  transition: color 0.5s, font-size 0.5s;
+
+  &:first-child {
+    margin-top: 20px;
+  }
+
+  &:hover {
+    font-size: 20px;
+    color: rgba(256,256,256,0)
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 34px;
+    padding: 30px;
+    transition: none;
+
+    &:hover {
+      font-size: 34px;
+    }
+
+    &:first-child {
+      margin-top: 50px;
+    }
+  }
+}

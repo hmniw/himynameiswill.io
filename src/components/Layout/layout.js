@@ -1,18 +1,10 @@
 import React from 'react'
+import Header from '../LeftNav/left-nav'
 import styles from './layout.module.scss'
-import Header from './header'
-import Footer from './footer'
 
 export default ({children}) => (
     <div>
         <Header/>
-        <div className={styles.container}>
-            <div className={styles.content}>
-                {children}
-            </div>
-        </div>
-        <Footer>
-            My new Gatsby Blog 2020
-        </Footer>
+        <main className={styles.container}>{children}</main>
     </div>
 );

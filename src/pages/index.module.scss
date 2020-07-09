@@ -10,19 +10,36 @@ body {
   align-items: center;
   width: 100%;
 
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+  }
+
   .title-container {
-    position: fixed;
     padding-bottom: 70px;
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+      position: static;
+      padding-bottom: 20px;
+    }
   }
 
   .social-icon-container {
     padding-top: 50px;
     padding-right: 40px;
-    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 175.3px;
+    //position: absolute;
+
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+      justify-content: center;
+      width: 100%;
+      position: static;
+      padding-top: 0;
+    }
   }
 
   .fancy {
@@ -32,7 +49,6 @@ body {
   }
 
   .social-icon {
-    //padding: 10px;
     color: white;
     font-size: 35px;
     -webkit-transition: font-size .5s;
@@ -42,6 +58,15 @@ body {
     &:hover {
       font-size: 45px;
     }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      position: static;
+      &:hover {
+        font-size: 35px;
+      }
+    }
   }
 
   h1 {
@@ -49,5 +74,10 @@ body {
     line-height: 1;
     letter-spacing: -0.03em;
     margin: 0;
+
+    @media screen and (max-width: 800px) {
+      font-size: 3em;
+
+    }
   }
 }

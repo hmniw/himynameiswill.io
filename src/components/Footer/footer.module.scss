@@ -1,20 +1,14 @@
-@import '../styles/global';
+@import 'src/styles/global.scss';
 
-$footer-height: 100px;
+$footer-width: 100px;
 
 .container {
-  background-color: $color-palette-3;
-  width: $container-width;
-  height: $footer-height;
-  position: absolute;
-  bottom: 0;
+  width: $footer-width;
 
   .footer {
     margin: 0 auto;
     text-align: center;
-    max-width: $site-width;
-    height: $footer-height;
-    line-height: $footer-height;
+    max-width: $footer-width;
     color: $color-palette-4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0 20px 0 20px;

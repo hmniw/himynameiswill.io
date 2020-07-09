@@ -1,101 +1,59 @@
 @import 'src/styles/global.scss';
 
-.container {
+body {
+  background: transparent;
+}
+
+.left-nav-container {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: transparent;
   left: 0;
-  position: absolute;
+  position: fixed;
   width: 100px;
+  z-index: 1;
 
-  .button {
-    background-color: $color-palette-1;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    height: auto;
-    min-width: 15px;
-    line-height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    border-radius: 5px;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 
-      &:hover {
-        background-color: $color-palette-2;
-      }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    color: gray;
+    line-height: 5px;
+    margin-bottom: 15px;
   }
 
   .button-container {
     margin: 10px;
-    background-color: transparent;
     border: 5px;
 
     &:last-child {
       margin-right: 20px;
     }
   }
+}
 
-  .button-icon {
-    color: black;
-
-    &:hover {
-      color: $color-palette-2
-    }
-  }
-
-  .link {
-    color: $color-palette-1;
-    font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 10px;
-
-    &:hover {
-      color: $color-palette-2;
-    }
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .name {
-    display: inline;
-    font-size: 25px;
-
-    &:first-child {
-      padding-left: 10px;
-    }
-  }
-
-  .name-bold {
-    @extend .name;
-    font-weight: bold;
-    margin-left: 5px;
-    color: #222f3e;
-  }
-
-  .avatar {
-    display: inline-block;
-    margin: 5px 10px 5px 10px;
-  }
-
-  .sensor {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    height: 1px;
-    top: 50px;
-  }
+.burger-menu-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  background: black;
 }
