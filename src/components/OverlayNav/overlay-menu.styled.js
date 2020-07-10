@@ -15,6 +15,7 @@ export const StyledMenu = styled.nav`
   width: 100%;
   z-index: 5;
   visibility: hidden;
+  transform: translateX(-100%);
   
   @media screen and (max-width: 768px) {
   visibility: visible;

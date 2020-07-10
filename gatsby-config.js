@@ -38,11 +38,11 @@ module.exports = {
           options: {
               name: `himynameiswill.io`,
               short_name: `Will H`,
-              start_url: `https://himynameiswill.io`,
+              start_url: `/`,
               background_color: `#000`,
               theme_color: `#00FFFF`,
               display: `standalone`,
-              icon: `${__dirname}/src/images/favicon/favicon__512x512.png`
+              icon: `src/images/favicon/favicon__512x512.png`
           },
       },
       'gatsby-plugin-sass',
