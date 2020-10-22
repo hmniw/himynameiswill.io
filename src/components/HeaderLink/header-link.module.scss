@@ -7,14 +7,14 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-transition: color 0.5s, font-size 0.5s;
-  transition: color 0.5s, font-size 0.5s;
+  transition: color 0.5s, transform 0.5s;
 
   &:first-child {
     margin-top: 20px;
   }
 
   &:hover {
-    font-size: 20px;
+    transform: scale(1.4);
     color: rgba(256,256,256,0)
   }
 

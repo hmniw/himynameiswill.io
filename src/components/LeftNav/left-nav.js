@@ -10,6 +10,7 @@
                  <div className={styles.headerContainer}>
                      <HeaderLink to={'/'} text={'home'}/>
                      <HeaderLink to={'/blog'} text={'blog'}/>
+                     <HeaderLink to={'/portfolio'} text={'portfolio'}/>
                      <HeaderLink to={'/about'} text={'about'}/>
                  </div>
              </div>

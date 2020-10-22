@@ -7,6 +7,7 @@ const Menu = ({open, setOpen}) => {
         <StyledMenu open={open}>
                 <HeaderLink to={'/'} text={'home'} open={open} setOpen={setOpen}/>
                 <HeaderLink to={'/blog'} text={'blog'} open={open} setOpen={setOpen}/>
+                <HeaderLink to={'/portfolio'} text={'portfolio'} open={open} setOpen={setOpen}/>
                 <HeaderLink to={'/about'} text={'about'} open={open} setOpen={setOpen}/>
         </StyledMenu>
     )
