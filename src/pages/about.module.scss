@@ -14,7 +14,7 @@
 
   .paragraph-container {
     width: 750px;
-    text-align: justify;
+    text-align: left;
 
     @media screen and (max-width: 768px) {
       width: 75%;
@@ -43,9 +43,9 @@
     }
   }
 
-  .thoughtworks {
+  .ao {
     text-decoration: none;
-    color: #ef5ba1;
+    color: #12c35a;
     transition: color .5s;
 
     &:hover {

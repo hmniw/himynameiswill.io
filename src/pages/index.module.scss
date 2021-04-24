@@ -40,6 +40,23 @@ body {
       position: static;
       padding-top: 0;
     }
+
+    .button-container {
+
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // padding-right: 40px;
+      align-items: center;
+  
+      &:hover {
+        transform-origin: center;
+        -webkit-transition: all .2s;
+        transition: all .3s ease-in-out;
+        transform: scale(1.2);
+      }
+    }
   }
 
   .fancy {
@@ -54,10 +71,6 @@ body {
     -webkit-transition: font-size .5s;
     transition: font-size .5s, color .5s;
     position: absolute;
-
-    &:hover {
-      font-size: 45px;
-    }
 
     @media screen and (max-width: 768px) {
       padding-left: 20px;

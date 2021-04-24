@@ -9,8 +9,8 @@ export default () => (
             <div className={styles.paragraphContainer}>
                 <div className={styles.paragraph}>Alright, so hi <span role={"img"} aria-label={"waving hand"}>👋</span></div>
                 <div className={styles.paragraph}>Currently I work for
-                    <a href={"https://www.thoughtworks.com/"} className={styles.thoughtworks}><b> Thought</b>Works </a>
-                    as a QA<span role={"img"} aria-label={"alien monster"}>👾</span>I’m at the
+                    <a href={"https://www.ao-jobs.com/"} className={styles.ao}> AO </a>
+                    as a Quality Engineer<span role={"img"} aria-label={"alien monster"}>👾</span>I’m at the
                      beginning of my journey, and though I’ve learnt plenty so far, there’s plenty more
                     that I’ve yet to learn <span role={"img"} aria-label={"man student"}>👨‍🎓</span>
                 </div>

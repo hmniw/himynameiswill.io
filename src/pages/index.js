@@ -3,18 +3,29 @@ import Layout from '../components/Layout/layout'
 import styles from './index.module.scss'
 import {faGithub, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+var dom = require('@fortawesome/fontawesome-svg-core').dom;
+
 
 
 export default () => (
   <Layout>
+      <style>
+          {dom.css()}
+      </style>
       <div className={styles.container}>
           <div className={styles.titleContainer}>
             <h1 className={styles.fancy}>Hi, I'm Will.</h1>
           </div>
           <div className={styles.socialIconContainer}>
-              <SocialButton site={"github"}/>
-              <SocialButton site={"linkedin"}/>
-              <SocialButton site={"twitter"}/>
+              <div className={styles.buttonContainer}>
+                <SocialButton site={"github"}/>
+              </div>
+              <div className={styles.buttonContainer}>
+                <SocialButton site={"linkedin"}/>
+              </div>
+              <div className={styles.buttonContainer}>
+                <SocialButton site={"twitter"}/>
+              </div>
           </div>
       </div>
   </Layout>

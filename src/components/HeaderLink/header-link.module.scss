@@ -6,8 +6,9 @@
   background: linear-gradient(to right, cyan, violet);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-transition: color 0.5s, font-size 0.5s;
-  transition: color 0.5s, font-size 0.5s;
+  -webkit-transition: color 0.5s, all 0.2s ease-in-out;
+  transition: color 0.5s, all 0.2s ease-in-out;
+  transform: scale(1.1);
 
   &:first-child {
     margin-top: 20px;

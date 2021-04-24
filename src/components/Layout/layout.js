@@ -4,6 +4,7 @@ import styles from './layout.module.scss'
 
 export default ({children}) => (
     <div>
+        <title>Will Herring</title>
         <Header/>
         <main className={styles.container}>{children}</main>
     </div>
