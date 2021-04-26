@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './hero.module.scss'
+import * as styles from './hero.module.scss'
 // import { FaArrowDown } from "react-icons/fa/";
 
 

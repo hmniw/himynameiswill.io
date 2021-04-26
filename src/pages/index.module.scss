@@ -15,8 +15,7 @@ body {
   }
 
   .title-container {
-    padding-bottom: 70px;
-    position: absolute;
+    padding-bottom: 10px;
 
     @media screen and (max-width: 768px) {
       position: static;
@@ -25,13 +24,11 @@ body {
   }
 
   .social-icon-container {
-    padding-top: 50px;
-    padding-right: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 175.3px;
-    //position: absolute;
+    position: static;
 
     @media screen and (max-width: 768px) {
       padding-right: 0;
@@ -47,7 +44,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      // padding-right: 40px;
       align-items: center;
   
       &:hover {
@@ -70,15 +66,12 @@ body {
     font-size: 35px;
     -webkit-transition: font-size .5s;
     transition: font-size .5s, color .5s;
-    position: absolute;
+    position: static;
 
     @media screen and (max-width: 768px) {
       padding-left: 20px;
       padding-right: 20px;
       position: static;
-      &:hover {
-        font-size: 35px;
-      }
     }
   }
 

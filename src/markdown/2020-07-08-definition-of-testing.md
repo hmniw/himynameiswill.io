@@ -7,7 +7,8 @@ keywords: "theory"
 So a heads-up, this is a bit longer and includes a whole bunch more about my own
  journey than I initially anticipated it to 😅 Please bear with me!
 
-###Context and a bit of background
+Context and a bit of background
+-------------------------------
 
 I think the first time I became aware of software testing, and actually considered it for
 a job, was when I realised that [Traveller's Tales](https://ttgames.com/) had a
@@ -90,7 +91,8 @@ a ton of flexibility and freedom to just get the job done how I saw fit.\
 I stopped looking at other jobs during this time, and was content in my own little
 world of writing Powershell scripts.
  
-###A chance to have a career in testing
+A chance to have a career in testing
+------------------------------------
  
 However, almost a year into the role, another ex-Apple colleague of mine, who worked
 for a company I'd never heard of called ThoughtWorks, dropped me a message to see how
@@ -157,7 +159,8 @@ pretty instantaneous, succinct response, right?
 
 Errr... yeah, about that 😅 
 
-###Alright, but seriously, what is testing?
+Alright, but seriously, what is testing?
+----------------------------------------
 
 Jokes aside, how would I actually explain what software testing is now?
 

@@ -1,19 +1,19 @@
  import React, { useState } from 'react'
- import styles from './left-nav.module.scss'
+ import { leftNavContainer, headerContainer, burgerMenuContainer} from './left-nav.module.scss'
  import { Burger, Menu, HeaderLink } from '../../components'
 
  function App() {
      const [open, setOpen] = useState(false);
      return (
          <header>
-             <div className={styles.leftNavContainer}>
-                 <div className={styles.headerContainer}>
-                     <HeaderLink to={'/'} text={'home'}/>
-                     <HeaderLink to={'/blog'} text={'blog'}/>
-                     <HeaderLink to={'/about'} text={'about'}/>
+             <div className={leftNavContainer}>
+                 <div className={headerContainer}>
+                     <HeaderLink to={'/'} text={'home'} open={open} setOpen={setOpen}/>
+                     <HeaderLink to={'/blog'} text={'blog'} open={open} setOpen={setOpen}/>
+                     <HeaderLink to={'/about'} text={'about'} open={open} setOpen={setOpen}/>
                  </div>
              </div>
-             <div className={styles.burgerMenuContainer}>
+             <div className={burgerMenuContainer}>
                  <Burger open={open} setOpen={setOpen}/>
                  <Menu open={open} setOpen={setOpen}/>
              </div>

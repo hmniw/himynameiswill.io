@@ -1,11 +1,17 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Header from '../LeftNav/left-nav'
-import styles from './layout.module.scss'
+import { container } from './layout.module.scss'
 
-export default ({children}) => (
+const Layout = ({children}) => (
     <div>
-        <title>Will Herring</title>
+        <Helmet>
+            <title>Will Herring</title>
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans|Krona+One" rel="stylesheet"/>
+        </Helmet>
         <Header/>
-        <main className={styles.container}>{children}</main>
+        <main className={container}>{children}</main>
     </div>
 );
+
+export default Layout;

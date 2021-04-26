@@ -1,13 +1,11 @@
 import React from "react"
 import Layout from '../components/Layout/layout'
-import styles from './index.module.scss'
+import * as styles from './index.module.scss'
 import {faGithub, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 var dom = require('@fortawesome/fontawesome-svg-core').dom;
 
-
-
-export default () => (
+const PageIndex = () => (
   <Layout>
       <style>
           {dom.css()}
@@ -54,3 +52,5 @@ const SocialButton = (props) => {
         </a>
     )
 };
+
+export default PageIndex;

@@ -7,25 +7,12 @@
 module.exports = {
 
   siteMetadata: {
-      title: `Will Herring`
+      title: `Will Herring`,
+      description: `Will Herring`,
+      author: `Will Herring`
   },
 
   plugins: [
-      {
-          resolve: `gatsby-plugin-prefetch-google-fonts`,
-          options: {
-              fonts: [
-                  {
-                      family: `Open Sans`,
-                      variants: [`200`, `400`, `700`]
-                  },
-                  {
-                      family: `Krona One`,
-                      variants: `400`
-                  }
-              ]
-          }
-      },
       {
           resolve: 'gatsby-source-filesystem',
           options: {
@@ -45,8 +32,13 @@ module.exports = {
               icon: `src/images/favicon/favicon__512x512.png`
           },
       },
+      {
+          resolve: `gatsby-plugin-styled-components`,
+          options: {}
+      },
       'gatsby-plugin-sass',
       'gatsby-plugin-svgr',
       `gatsby-transformer-remark`,
+      `gatsby-plugin-react-helmet`
   ],
 };
